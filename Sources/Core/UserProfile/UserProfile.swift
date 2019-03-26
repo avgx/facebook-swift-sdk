@@ -36,6 +36,9 @@ import UIKit
 
  You can use this class to build your own `ProfilePictureView` or in place of typical requests to "/me".
  */
+ 
+public typealias FBSDKProfile = Profile
+ 
 public struct UserProfile {
   /// The user id.
   public let userId: String

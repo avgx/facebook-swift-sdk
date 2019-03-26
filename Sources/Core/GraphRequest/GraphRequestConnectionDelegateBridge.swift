@@ -19,6 +19,9 @@
 import FBSDKCoreKit.FBSDKGraphRequestConnection
 import Foundation
 
+public typealias FBSDKGraphRequestConnectionDelegate = GraphRequestConnectionDelegate
+public typealias FBSDKGraphRequestConnection = GraphRequestConnection
+
 internal class GraphRequestConnectionDelegateBridge: NSObject, FBSDKGraphRequestConnectionDelegate {
   var networkFailureHandler: GraphRequestConnection.NetworkFailureHandler?
   var networkProgressHandler: GraphRequestConnection.NetworkProgressHandler?
